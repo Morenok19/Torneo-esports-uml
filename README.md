@@ -1,0 +1,3 @@
+Para diseñar el sistema de gestión de equipos y jugadores, he optado por una relación de agregación entre las clases Equipo y Jugador, ya que no veía adecuada la de composición, ya que los jugadores podrán existir sin estar inscritos en ningun equipo en este modelo.
+Además, Equipo tiene un atributo de tipo lista (List<Jugador>) de los jugadores inscritos, mientras que en Jugador, el atributo Equipo equipo, puede ser null si el jugador no pertenece aún a ningún equipo registrado.
+Esta estructura proporciona flexibilidad al sistema, permitiendo registrar jugadores y posteriormente asignarlos a equipos según sea necesario.
